@@ -5,6 +5,19 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
-		// Put your code here	
+		int firstSide = Integer.parseInt(args[0]);
+		int secondSide = Integer.parseInt(args[1]);
+		int thirdSide = Integer.parseInt(args[2]);
+		
+		boolean isFirstSmaller = firstSide < secondSide + thirdSide;
+		boolean isSecondSmaller = secondSide < firstSide + thirdSide;
+		boolean isThirdSmaller = thirdSide < firstSide + secondSide;
+
+		if(isFirstSmaller && isSecondSmaller && isThirdSmaller){
+			System.out.println(args[0]+", "+args[1]+", "+args[2]+": true");
+		}
+		else{
+			System.out.println(args[0]+", "+args[1]+", "+args[2]+": false");
+		}
 	}
 }
