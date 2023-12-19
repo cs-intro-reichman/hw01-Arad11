@@ -11,6 +11,6 @@ public class LinearEq {
 		double y = Double.parseDouble(args[2]);
 		double x = (y-b)/a;
 		System.out.println(a+" * x + " + b + " = " + y);
-		System.out.println("X = " + x);
+		System.out.println("x = " + x);
 	}	
 }
