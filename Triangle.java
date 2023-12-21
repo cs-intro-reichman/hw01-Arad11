@@ -13,11 +13,11 @@ public class Triangle {
 		boolean isSecondSmaller = secondSide < firstSide + thirdSide;
 		boolean isThirdSmaller = thirdSide < firstSide + secondSide;
 
-		if(isFirstSmaller && isSecondSmaller && isThirdSmaller){
-			System.out.println(args[0]+", "+args[1]+", "+args[2]+": true");
+		if(isFirstSmaller && isSecondSmaller && isThirdSmaller) {
+			System.out.println(args[0] + ", "+args[1] + ", "+args[2] + ": true");
 		}
-		else{
-			System.out.println(args[0]+", "+args[1]+", "+args[2]+": false");
+		else {
+			System.out.println(args[0] + ", "+args[1] + ", "+args[2] + ": false");
 		}
 	}
 }
